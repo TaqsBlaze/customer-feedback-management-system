@@ -201,6 +201,18 @@ class FeedBackApp(QMainWindow):
 
                 print(writer)
 
+        #Clear input entries
+        self.star1.setChecked(False)
+        self.star2.setChecked(False)
+        self.star3.setChecked(False)
+        self.star4.setChecked(False)
+        self.star5.setChecked(False)
+        self.star_count = 0
+        self.name.clear()
+        self.comment.clear()
+
+
+        
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     window = FeedBackApp()
